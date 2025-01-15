@@ -1,5 +1,5 @@
 # Patrón Facade
-La idea de este repo es mostrar forma simple como podemos desacoplar la lógica para que nuestro proyecto sea más legible, escalable y mantenible a largo plazo.
+La idea de este repo es mostrar de forma simple como podemos desacoplar la lógica para que nuestro proyecto sea más legible, escalable y mantenible a largo plazo.
 
 Veamos un ejemplo práctico. Tenemos un proyecto e-commerce, el cuál tiene 3 módulos:
 
@@ -46,7 +46,7 @@ Esto da muchas ventajas:
 
 ¿Por qué el ``orders.controller`` está relacionado con ``orders.service`` y ``orders.facade``?
 
-Sencillo, porque el facade SOLO se encarga de los casos de uso que involucran a más de un módulo. El orders.service se encarga de la lógica de los casos de uso que solo están relacionados con su propio módulo.
+Sencillo, **``porque el facade SOLO se encarga de los casos de uso que involucran a más de un módulo.``** El orders.service se encarga de la lógica de los casos de uso que solo están relacionados con su propio módulo.
 
 Veamos con ejemplos de casos de uso para que quede más claro:
 
